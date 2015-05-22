@@ -44,7 +44,8 @@ class CheckRAM < Sensu::Plugin::Check::CLI
          default: 5
 
   def run
-    total_ram, free_ram = 0, 0
+    total_ram = 0
+    free_ram = 0
 
     `free -m`.split("\n").drop(1).each do |line|
       # #YELLOW
