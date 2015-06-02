@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.date                   = Date.today.to_s
   s.description            = 'Sensu plugins for checking memory'
   s.email                  = '<sensu-users@googlegroups.com>'
-  s.executables            = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.executables            = Dir.glob('bin/**/*').map { |file| File.basename(file) }
   s.files                  = Dir.glob('{bin,lib}/**/*') + %w(LICENSE README.md CHANGELOG.md)
   s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-memory-checks'
   s.license                = 'MIT'
@@ -38,7 +38,11 @@ Gem::Specification.new do |s|
   s.version                = SensuPluginsMemoryChecks::Version::VER_STRING
 
   s.add_runtime_dependency 'sensu-plugin', '1.1.0'
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> update repo
   s.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
   s.add_development_dependency 'rubocop',                   '~> 0.30'
   s.add_development_dependency 'rspec',                     '~> 3.1'
