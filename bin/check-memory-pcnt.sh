@@ -48,7 +48,12 @@ CRIT=${CRIT:=0}
 #Get total memory available on machine
 TotalMem=$(free -m | grep Mem | awk '{ print $2 }')
 #Determine amount of free memory on the machine
+set -o pipefail
 FreeMem=$(free -m | grep buffers/cache | awk '{ print $4 }')
+if [ $? -ne 0 ];
+  then
+  FreeMem=$(free -m | grep Mem | awk '{ print $7 }')
+fi
 #Get percentage of free memory
 FreePer=$(echo "scale=3; $FreeMem / $TotalMem * 100" | bc -l| cut -d "." -f1)
 #Get actual memory usage percentage by subtracting free memory percentage from 100
