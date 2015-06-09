@@ -4,16 +4,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## Unreleased][unreleased]
+### Added
+- Support for Fedora22 and Cent7 to `check-memory-pcnt.sh`
+- Add wrapper for all shell scripts
+
+## [0.0.2] - 2015-06-03
+### Fixed
+- added binstubs
+### Changed
+- removed cruft from /lib
 
 ## 0.0.1 - 2015-05-21
-
 ### Added
 - initial release
 
-## [0.0.2] - 2015-06-03
-
-### Fixed
-- added binstubs
-
-### Changed
-- removed cruft from /lib
