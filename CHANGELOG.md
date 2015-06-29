@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## Unreleased][unreleased]
+
+## [0.0.3] - 2015-06-29
 ### Added
 - Support for Fedora22 and Cent7 to `check-memory-pcnt.sh`
 - Add wrapper for all shell scripts
