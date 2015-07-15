@@ -5,7 +5,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## Unreleased
 
-## [0.0.4] - 2015-07-14
+## [0.0.5] - 2015-07-14
 ### Fixed
 - fixed bad script filenames that prevented the checks for executing
 
