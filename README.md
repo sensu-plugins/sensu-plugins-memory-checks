@@ -10,10 +10,14 @@
 ## Functionality
 
 ## Files
+ * bin/check-mem.rb
  * bin/check-mem.sh
+ * bin/check-memory-pcnt.rb
  * bin/check-memory-pcnt.sh
  * bin/check-ram.rb
+ * bin/check-swap-percentage.rb
  * bin/check-swap-percentage.sh
+ * bin/check-swap.sh
  * bin/check-swap.rb
  * bin/metrics-memory-percent
  * bin/metrics-memory.rb
@@ -22,6 +26,6 @@
 
 ## Installation
 
-[Installation and Setup](https://github.com/sensu-plugins/documentation/blob/master/user_docs/installation_instructions.md)
+[Installation and Setup](http://sensu-plugins.io/docs/installation_instructions.html)
 
 ## Notes
