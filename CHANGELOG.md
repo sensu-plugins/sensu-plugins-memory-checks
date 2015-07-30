@@ -5,6 +5,11 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## Unreleased
 
+## [0.0.6] - 2015-07-30
+  - replaced `free` with vmstat gem to add more nix compatibility
+  - added option free (default to keep old default behavior)
+  - added option used to change check to checked used instead of memory free
+
 ## [0.0.5] - 2015-07-14
 ### Fixed
 - fixed bad script filenames that prevented the checks for executing
@@ -32,4 +37,3 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ## 0.0.1 - [2015-05-21]
 ### Added
 - initial release
-
