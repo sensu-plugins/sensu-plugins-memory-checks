@@ -3,8 +3,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
-## Unreleased
-  - fixed check-memory.sh, system may not have /etc/redhat-version
+## [Unreleased][unreleased]
+
+## [0.0.7] - 2015-08-11
+### Fixed
+  - check-memory.sh, system may not have /etc/redhat-version
+
+### Changed
+- bump rubocop
 
 ## [0.0.6] - 2015-07-30
   - replaced `free` with vmstat gem to add more nix compatibility
@@ -38,3 +44,11 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ## 0.0.1 - [2015-05-21]
 ### Added
 - initial release
+
+[unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.7...HEAD
+[0.0.7]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.6...0.0.7
+[0.0.5]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.5...0.0.6
+[0.0.5]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.4...0.0.5
+[0.0.4]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.3...0.0.4
+[0.0.3]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.2...0.0.3
+[0.0.2]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.1...0.0.2
