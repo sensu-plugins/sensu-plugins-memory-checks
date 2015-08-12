@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## Unreleased
+  - fixed check-memory.sh, system may not have /etc/redhat-version
 
 ## [0.0.6] - 2015-07-30
   - replaced `free` with vmstat gem to add more nix compatibility
