@@ -49,7 +49,7 @@ class MemoryGraphite < Sensu::Plugin::Metric::CLI::Graphite
     ok
   end
 
-  def metrics_hash # rubocop:disable all
+  def metrics_hash
     mem = {}
     memp = {}
 
