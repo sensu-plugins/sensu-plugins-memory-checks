@@ -1,7 +1,7 @@
 #! /usr/bin/env ruby
 #  encoding: UTF-8
 #
-#   mermory-metrics-percent
+#   metrics-memory-percent
 #
 # DESCRIPTION:
 #
@@ -13,11 +13,9 @@
 #
 # DEPENDENCIES:
 #   gem: sensu-plugin
-#   gem: socket
 #
 # USAGE:
-#
-# NOTES:
+#  ./metrics-memory-percent.rb
 #
 # LICENSE:
 #   Copyright 2012 Sonian, Inc <chefs@sonian.net>
