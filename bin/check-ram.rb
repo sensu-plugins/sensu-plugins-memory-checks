@@ -79,9 +79,9 @@ class CheckRAM < Sensu::Plugin::Check::CLI
 
     if config[:megabytes]
       # free_ram is returned in Bytes. see: https://github.com/threez/ruby-vmstat/blob/master/lib/vmstat/memory.rb
-      free_ram /= 1024 / 1024
-      used_ram /= 1024 / 1024
-      total_ram /= 1024 / 1024
+      free_ram /= 1024 * 1024
+      used_ram /= 1024 * 1024
+      total_ram /= 1024 * 1024
       if config[:free]
         ram = free_ram
         message "#{ram} megabytes of RAM left"
