@@ -5,9 +5,13 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased][unreleased]
 
+## [0.0.8] - 2015-09-29
+### Fixed
+- check-ram.rb incorrectly calculated ram
+
 ## [0.0.7] - 2015-08-11
 ### Fixed
-  - check-memory.sh, system may not have /etc/redhat-version
+- check-memory.sh, system may not have /etc/redhat-version
 
 ### Changed
 - bump rubocop
