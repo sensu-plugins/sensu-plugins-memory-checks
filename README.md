@@ -10,16 +10,16 @@
 ## Functionality
 
 ## Files
- * bin/check-mem.rb
- * bin/check-mem.sh
- * bin/check-memory-pcnt.rb
- * bin/check-memory-pcnt.sh
+ * bin/check-memory.rb
+ * bin/check-memory.sh
+ * bin/check-memory-percent.rb
+ * bin/check-memory-percent.sh
  * bin/check-ram.rb
- * bin/check-swap-percentage.rb
- * bin/check-swap-percentage.sh
+ * bin/check-swap-percent.rb
+ * bin/check-swap-percent.sh
  * bin/check-swap.sh
  * bin/check-swap.rb
- * bin/metrics-memory-percent
+ * bin/metrics-memory-percent.rb
  * bin/metrics-memory.rb
 
 ## Usage
