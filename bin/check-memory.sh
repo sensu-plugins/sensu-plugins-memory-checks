@@ -46,7 +46,7 @@ if [[ -f /etc/redhat-version && `awk '{print $3}' /etc/redhat-release` =~ ^2[0-9
    redhat_version=1
 elif [[ -f /etc/redhat-version && `awk '{print $7}' /etc/redhat-version` =~ ^7\.[0-9]{1} ]]; then
    redhat_version=1
-elif [[ -f /etc/redhat-release && `awk '{print $4}' /etc/redhat-release` =~ ^7\.[0-9]{1} ]]; then
+elif [[ -f /etc/redhat-release && `awk '{print $7}' /etc/redhat-release` =~ ^7\.[0-9]{1} ]]; then
    redhat_version=1
 else
    redhat_version=0
