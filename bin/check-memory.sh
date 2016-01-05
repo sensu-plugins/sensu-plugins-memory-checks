@@ -42,11 +42,11 @@ WARN=${WARN:=0}
 CRIT=${CRIT:=0}
 
 # validate fedora > 20 and rhel > 7.0 and centos > 7.0
-if [[ -f /etc/redhat-version && `awk '{print $3}' /etc/redhat-release` =~ ^2[0-9]{1} ]]; then
+if [[ -f /etc/redhat-version && `egrep "2[0-9]{1}" /etc/redhat-release` ]]; then
    redhat_version=1
-elif [[ -f /etc/redhat-version && `awk '{print $7}' /etc/redhat-version` =~ ^7\.[0-9]{1} ]]; then
+elif [[ -f /etc/redhat-version && `egrep "7\.[0-9]{1}" /etc/redhat-version` ]]; then
    redhat_version=1
-elif [[ -f /etc/redhat-release && `awk '{print $7}' /etc/redhat-release` =~ ^7\.[0-9]{1} ]]; then
+elif [[ -f /etc/redhat-release && `egrep "7\.[0-9]{1}" /etc/redhat-release` ]]; then
    redhat_version=1
 else
    redhat_version=0
