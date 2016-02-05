@@ -8,6 +8,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ## [0.0.8] - 2015-09-29
 ### Fixed
 - check-ram.rb incorrectly calculated ram
+- check-memory.sh, support for RHEL 7.
 
 ## [0.0.7] - 2015-08-11
 ### Fixed
