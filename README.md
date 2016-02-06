@@ -5,7 +5,6 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-memory-checks/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-memory-checks)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-memory-checks/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-memory-checks)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-memory-checks.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-memory-checks)
-[ ![Codeship Status for sensu-plugins/sensu-plugins-memory-checks](https://codeship.com/projects/a76e31a0-dc03-0132-9d16-1e3fe125131b/status?branch=master)](https://codeship.com/projects/79854)
 
 ## Functionality
 

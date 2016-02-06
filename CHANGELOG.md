@@ -5,6 +5,10 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased][unreleased]
 
+## [0.0.9] - 2016-02-05
+### Added
+- new certs
+
 ## [0.0.8] - 2015-09-29
 ### Fixed
 - check-ram.rb incorrectly calculated ram
@@ -35,22 +39,24 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 - set all deps to alpha order in Gemspec
 - removed unused tasks in Rakefile
 
-## [0.0.3] - [2015-06-29]
+## [0.0.3] - 2015-06-29
 ### Added
 - Support for Fedora22 and Cent7 to `check-memory-pcnt.sh`
 - Add wrapper for all shell scripts
 
-## [0.0.2] - [2015-06-03]
+## [0.0.2] - 2015-06-03
 ### Fixed
 - added binstubs
 ### Changed
 - removed cruft from /lib
 
-## 0.0.1 - [2015-05-21]
+## 0.0.1 - 2015-05-21
 ### Added
 - initial release
 
-[unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.7...HEAD
+[unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.9...HEAD
+[0.0.9]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.8...0.0.9
+[0.0.8]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.7...0.0.8
 [0.0.7]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.6...0.0.7
 [0.0.5]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.5...0.0.6
 [0.0.5]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/0.0.4...0.0.5
