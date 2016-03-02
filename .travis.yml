@@ -1,9 +1,6 @@
 language: ruby
 cache:
 - bundler
-before_install:
-- openssl aes-256-cbc -K $encrypted_77a93727ba61_key -iv $encrypted_77a93727ba61_iv
-  -in certs/pvt_key -out certs/gem-private_key.pem -d
 install:
 - bundle install
 rvm:
@@ -24,13 +21,13 @@ script:
 deploy:
   provider: rubygems
   api_key:
-    secure: QsdHB3tKybuuXEboEX4w6pHif+AVfhFFjecH/UtSHh8jkupA2Bw1NovN4+Vs7nEcsY9wlXhFr0+CREPsLwRzpkmcjUPjxREamo9mH82uEFIkSUfS8+3NJIHNyTY0PyjcdaCisWDR3qovOv0QbInPmHMYc8JItoyVRGPTYVeZE7A=
+    secure: TgMN+aURCSc0ilnRDJpQ3ySfEriGppMn5onctJJWN6ghReaKe8faXjcB/RWljfIBQgxkijy2svMgN+y6cRyii6dTfnFnZY4yUO+u6+HU5QNzb5uVbn2MKU5KfpsQFYwToPSKbQ1YcvA39U67sS4aRVf0TsrPoQfXZxOeLytNtz8=
   gem: sensu-plugins-memory-checks
   on:
     tags: true
-    repo: sensu-plugins/sensu-plugins-memory-checks
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
     rvm: 2.1
     rvm: 2.2
+    repo: sensu-plugins/sensu-plugins-memory-checks
