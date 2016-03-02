@@ -5,6 +5,10 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased][unreleased]
 
+## [0.0.10] - 2016-02-23
+### Fixed
+- `check-memory-percent.sh` returned "MEM UNKNOWN" when less than 1% of memory was free
+
 ## [0.0.9] - 2016-02-05
 ### Added
 - new certs
