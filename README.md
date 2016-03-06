@@ -29,7 +29,7 @@
 
 ### `bin/check-ram.rb`
 
-Ruby does not have a good native way without the use of c extensions to grab information on memory usage (outside of running shell commands and parsing out). Because of this `check-ram.rb` uses a gem called `vmstat` which has a somewhat annoying dependency on a gcc to compile the c extensions. In order to not force people to install gcc if they are not using `check-ram.rb` we do not install it by default, and is up to the user to make sure that they install it. This requires two steps and can vary based on your distribution and ruby set up:
+Ruby does not have a good native way without the use of C extensions to grab information on memory usage (outside of running shell commands and parsing out). Because of this `check-ram.rb` uses a gem called `vmstat` which has a somewhat annoying dependency on a gcc to compile the C extensions. In order to not force people to install gcc if they are not using `check-ram.rb` we do not install it by default, and is up to the user to make sure that they install it. This requires two steps and can vary based on your distribution and ruby set up:
 - Install `gcc`. If you are on a debian based system it is located in the `build-essential` package.
 - Install `vmstat` gem into the path that sensu gems are expected to run from: this is typically.
 
