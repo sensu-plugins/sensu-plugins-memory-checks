@@ -14,10 +14,14 @@
 # DEPENDENCIES:
 #   gem: sensu-plugin
 #   gem: vmstat
+#   compiler: gcc
 #
 # USAGE:
 #   check-ram.rb --help
 #
+# EXTRA INSTALL INSTRUCTIONS:
+#   You must install gcc. This is needed to compile the vmstat gem
+#   which you must put in a path that sensu can reach.
 # NOTES:
 #   The default behavior is to check % of RAM free. This can easily
 #   be overwritten via args please see `check-ram.rb --help` for details
@@ -64,6 +68,13 @@ class CheckRAM < Sensu::Plugin::Check::CLI
          default: 5
 
   def run
+    begin
+      require 'vmstat'
+    rescue LoadError => e
+      raise unless e.message =~ /vmstat/
+      unknown "Error unable to load vmstat gem: #{e}"
+    end
+
     # calculating free and used ram based on: https://github.com/threez/ruby-vmstat/issues/4 to emulate free -m
     mem = Vmstat.snapshot.memory
     free_ram = mem.inactive_bytes + mem.free_bytes

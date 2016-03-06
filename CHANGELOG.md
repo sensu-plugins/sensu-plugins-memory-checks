@@ -5,6 +5,12 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased][unreleased]
 
+## [1.0.0] - 2016-03-06
+### Changed
+- removed `vmstat` from a runtime dependency to remove gcc dependency.
+- added documentation about how you would install the required runtime dependencies if you are using `bin/check-ram.rb`.
+- added some checking to `bin/check-ram.rb` to be handled appropriately if you do not install the required dependencies.
+
 ## [0.0.9] - 2016-02-05
 ### Added
 - new certs
