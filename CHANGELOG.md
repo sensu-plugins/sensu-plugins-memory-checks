@@ -5,6 +5,10 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased][unreleased]
 
+## [1.0.1] - 2016-03-07
+### Fixed
+- `check-memory-percent.sh` returned "MEM UNKNOWN" when less than 1% of memory was free
+
 ## [1.0.0] - 2016-03-06
 ### Changed
 - removed `vmstat` from a runtime dependency to remove gcc dependency.
