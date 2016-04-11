@@ -41,21 +41,10 @@ fi
 WARN=${WARN:=0}
 CRIT=${CRIT:=0}
 
-# validate fedora > 20 and rhel > 7.0 and centos > 7.0
-if [[ -f /etc/redhat-version && `egrep "2[0-9]{1}" /etc/redhat-release` ]]; then
-   redhat_version=1
-elif [[ -f /etc/redhat-version && `egrep "7\.[0-9]{1}" /etc/redhat-version` ]]; then
-   redhat_version=1
-elif [[ -f /etc/redhat-release && `egrep "7\.[0-9]{1}" /etc/redhat-release` ]]; then
-   redhat_version=1
-else
-   redhat_version=0
-fi
-
-if [ -f /etc/redhat-release ] && [ $redhat_version = '1' ] ; then
-  FREE_MEMORY=`free -m | grep Mem | awk '{ print $7 }'`
-else
-  FREE_MEMORY=`free -m | grep buffers/cache | awk '{ print $4 }'`
+FREE_MEMORY=$(free -m | grep buffers/cache | awk '{ print $4 }')
+if [ $? -ne 0 ];
+  then
+  FREE_MEMORY=$(free -m | grep Mem | awk '{ print $7 }')
 fi
 
 if [ "$FREE_MEMORY" = "" ]; then
