@@ -41,6 +41,7 @@ fi
 WARN=${WARN:=0}
 CRIT=${CRIT:=0}
 
+set -o pipefail
 FREE_MEMORY=$(free -m | grep buffers/cache | awk '{ print $4 }')
 if [ $? -ne 0 ]; then
   FREE_MEMORY=$(free -m | grep Mem | awk '{ print $7 }')
