@@ -4,8 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+
+## [1.0.2] - 2016-04-12
 ### Fixed
-- `check-memory.sh`: Update for Ubuntu 16.04 free output
+- `check-memory.sh`: Update for Ubuntu 16.04 `free` output
 
 ## [1.0.1] - 2016-03-07
 ### Fixed
