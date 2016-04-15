@@ -21,7 +21,8 @@
 #
 # EXTRA INSTALL INSTRUCTIONS:
 #   You must install gcc. This is needed to compile the vmstat gem
-#   which you must put in a path that sensu can reach.
+#   which you must put in a path that sensu can reach. See the README for
+#   more details.
 # NOTES:
 #   The default behavior is to check % of RAM free. This can easily
 #   be overwritten via args please see `check-ram.rb --help` for details
