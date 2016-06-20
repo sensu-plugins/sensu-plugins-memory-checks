@@ -66,7 +66,7 @@ if [ "$UsedPer" = "" ]; then
 fi
 
 if [ "$perform" = "yes" ]; then
-  output="system memory usage: $UsedPer% | free memory="$UsedPer"MB;$WARN;$CRIT;0"
+  output="system memory usage: $UsedPer% | free memory="$UsedPer"%;$WARN;$CRIT;0"
 else
   output="system memory usage: $UsedPer%"
 fi
