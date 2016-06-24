@@ -22,6 +22,12 @@
  * bin/metrics-memory.rb
 
 ## Usage
+Use `-h` flag on any command to see available usages, `-w` to set warning threshold `-c` to set critical threshold and `-p` to print out performance data. 
+ * `/opt/sensu/embedded/bin/check-memory.rb -w 2500 -c 3000`  - Values in Megabytes
+ * `/opt/sensu/embedded/bin/check-memory-percent.rb -w 70 -c 80` - Values in Percentages
+ * `/opt/sensu/embedded/bin/check-swap.rb -w 2500 -c 3000` - Values in Megabytes
+ * `/opt/sensu/embedded/bin/check-swap-percent.rb -w 70 -c 80` - Values in Percentages
+ * `/opt/sensu/embedded/bin/metrics-memory.rb -s FooBar` - So metrics are now prepended with foobar, default is machine hostname. 
 
 ## Installation
 
