@@ -42,8 +42,8 @@ if [ "$hlp" = "yes" ]; then
   exit 0
 fi
 
-WARN=${WARN:=0}
-CRIT=${CRIT:=0}
+WARN=${WARN:=80}
+CRIT=${CRIT:=90}
 
 #Get total memory available on machine
 TotalMem=$(free -m | grep Mem | awk '{ print $2 }')
