@@ -85,8 +85,6 @@ class CheckRAM < Sensu::Plugin::Check::CLI
     # only free or used should be defined, change defaults to mirror free
     if config[:used]
       config[:free] = false
-      config[:warn] = 90
-      config[:crit] = 95
     end
 
     if config[:megabytes]
