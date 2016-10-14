@@ -67,7 +67,7 @@ class MemoryGraphite < Sensu::Plugin::Metric::CLI::Graphite
     mem['freeWOBuffersCaches'] = mem['free'] + (mem['buffers'] + mem['cached'])
 
     # to prevent division by zero
-    swptot = if mem['swapTotal'] == 0
+    swptot = if mem['swapTotal'].zero?
                1
              else
                mem['swapTotal']

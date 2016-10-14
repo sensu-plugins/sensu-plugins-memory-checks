@@ -4,8 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+
+## [2.0.0] - 2016-10-14
 ### Fixed
 - `check-memory-percent.sh`: Corrected units (from MB to %) in performance data output
+- `check-ram.rb`: fixed overwriting of cli args for warning and critical when using `--used`
 
 ## [1.0.2] - 2016-04-12
 ### Fixed
