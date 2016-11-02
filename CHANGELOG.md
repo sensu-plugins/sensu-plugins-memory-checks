@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+### Fixed
+- `check-ram.rb`: Only require vmstat on `#run`
 
 ## [2.0.0] - 2016-10-14
 ### Fixed

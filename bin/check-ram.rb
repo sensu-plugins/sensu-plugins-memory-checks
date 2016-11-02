@@ -34,7 +34,6 @@
 #   for details.
 #
 require 'sensu-plugin/check/cli'
-require 'vmstat'
 
 class CheckRAM < Sensu::Plugin::Check::CLI
   option :megabytes,
