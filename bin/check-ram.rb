@@ -69,13 +69,6 @@ class CheckRAM < Sensu::Plugin::Check::CLI
          default: 5
 
   def run
-    begin
-      require 'vmstat'
-    rescue LoadError => e
-      raise unless e.message =~ /vmstat/
-      unknown "Error unable to load vmstat gem: #{e}"
-    end
-
     # calculating free and used ram based on: https://github.com/threez/ruby-vmstat/issues/4 to emulate free -m
     mem = Vmstat.snapshot.memory
     free_ram = mem.inactive_bytes + mem.free_bytes
