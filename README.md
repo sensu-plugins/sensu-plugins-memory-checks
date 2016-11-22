@@ -15,7 +15,6 @@
  * bin/check-memory-percent.sh
  * bin/check-ram.rb
  * bin/check-swap-percent.rb
- * bin/check-swap-percent.sh
  * bin/check-swap.sh
  * bin/check-swap.rb
  * bin/metrics-memory-percent.rb
