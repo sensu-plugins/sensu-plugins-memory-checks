@@ -7,7 +7,7 @@
 # Author: Aleksandar Stojanov <aleksandar.stojanov@polarcape.com>
 #
 # PLATFORMS:
-#   Linux, BSD
+#   Linux
 #
 # DEPENDENCIES:
 #   gem: sensu-plugin
