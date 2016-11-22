@@ -11,11 +11,10 @@
 #
 # DEPENDENCIES:
 #   gem: sensu-plugin
+#   commands: free, grep
 #
 # USAGE:
 #   check-swap-percent.rb -w warn_percent -c critical_percent
-#
-# Uses: free & grep
 #
 # LICENSE:
 #   Copyright 2016 Aleksandar Stojanov <aleksandar.stojanov@polarcape.com>
