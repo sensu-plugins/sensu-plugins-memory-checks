@@ -7,6 +7,11 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Fixed
 - `check-ram.rb`: Only require vmstat on `#run`
 
+## [2.1.0] - 2016-11-22
+### Changed
+- `check-swap-percent.rb`: Rewrite the check for swap percentage in pure ruby while maintaining backwards compatibility.
+- `check-swap-percent.sh`: Remove obsolete shell script.
+
 ## [2.0.0] - 2016-10-14
 ### Fixed
 - `check-memory-percent.sh`: Corrected units (from MB to %) in performance data output
