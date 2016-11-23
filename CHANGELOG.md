@@ -4,8 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+
+## [2.1.1] - 2016-11-23
 ### Fixed
 - `check-ram.rb`: Only require vmstat on `#run`
+- check if swap exists
 
 ## [2.1.0] - 2016-11-22
 ### Changed
