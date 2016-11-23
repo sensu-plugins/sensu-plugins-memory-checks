@@ -45,8 +45,8 @@ class CheckSWAP < Sensu::Plugin::Check::CLI
     used_swap = output_swap.split(' ')[2].to_i
 
     # Check if swap exists
-    if total_swap == 0
-      print "There is no SWAP on this machine"
+    if total_swap.zero?
+      print 'There is no SWAP on this machine'
       exit
     end
 
