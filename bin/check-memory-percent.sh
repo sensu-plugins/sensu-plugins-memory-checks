@@ -14,6 +14,9 @@
 # Date: 2016-02-15
 # Modified: J. Brandt Buckley <brandt.buckley@sendgrid.com>
 
+# set lang
+LANG=C
+
 # get arguments
 
 # #RED

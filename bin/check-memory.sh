@@ -10,6 +10,9 @@
 # The memory check is done with following command line:
 # free -m | grep buffers/cache | awk '{ print $4 }'
 
+# set lang
+LANG=C
+
 # get arguments
 
 # #RED

@@ -12,6 +12,9 @@
 # The swap check is done with following command line:
 # vmstat | tail -n1 | awk '{ print $3 }'
 
+# set lang
+LANG=C
+
 # get arguments
 
 # #RED 
