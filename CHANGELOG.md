@@ -11,7 +11,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 - set environment varable LANG=C for reliable output parsing
 
 ### Fixed
-- check is swap is present on system
+- check if swap is present on system
 - `check-ram.rb`: Only require vmstat on `#run`
 
 ## [2.1.1] - 2016-11-23
