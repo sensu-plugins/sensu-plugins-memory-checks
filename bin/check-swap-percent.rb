@@ -36,6 +36,13 @@ class CheckSWAP < Sensu::Plugin::Check::CLI
          proc: proc(&:to_i),
          default: 80
 
+  option :required,
+         short: '-r',
+         long: '--required',
+         description: 'checks if swap is missing from the machine',
+         boolean: true,
+         default: false
+
   def run
     # Get output from free command
     output_swap = `free -m | grep "Swap"`
@@ -46,8 +53,12 @@ class CheckSWAP < Sensu::Plugin::Check::CLI
 
     # Check if swap exists
     if total_swap.zero?
-      print 'There is no SWAP on this machine'
-      exit
+      if config[:required]
+        critical 'ERROR: SWAP is missing on this machine'
+      else
+        print 'There is no SWAP configured'
+        exit
+      end
     end
 
     # Prepare output message
