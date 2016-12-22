@@ -7,8 +7,10 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Added
 - check is swap is present on system
 - add option for warn/crit if swap is missing
+
 ### Changed
 - set environment varable LANG=C for reliable output parsing
+
 ### Fixed
 - `check-ram.rb`: Only require vmstat on `#run`
 
