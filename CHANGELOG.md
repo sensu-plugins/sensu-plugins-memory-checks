@@ -23,11 +23,11 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ### Changed
 - `check-swap-percent.rb`: Rewrite the check for swap percentage in pure ruby while maintaining backwards compatibility. (@losisin)
-- `check-swap-percent.sh`: Remove obsolete shell script. (@losisin)
 - set environment varable LANG=C for reliable output parsing (@corro)
 
 ### Removed
 - Support for Ruby < 2.1 (@eheydrick)
+- `check-swap-percent.sh`: Remove obsolete shell script. (@losisin)
 
 ## [1.0.2] - 2016-04-12
 ### Fixed
