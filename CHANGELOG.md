@@ -5,7 +5,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased]
 
-## [2.0.0] - 2016-01-17
+## [2.0.0] - 2017-01-17
 ### Breaking Changes
 - The hardcoded default thresholds of 90% warn 95% critical in `check-ram.rb` when using the `--used` option 
   have been removed so custom thresholds can be passed. To obtain identical behavior configure the check
