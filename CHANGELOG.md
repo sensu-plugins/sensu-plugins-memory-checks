@@ -10,24 +10,29 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Changed
 - set environment varable LANG=C for reliable output parsing
 
-### Fixed
-- check if swap is present on system
-- `check-ram.rb`: Only require vmstat on `#run`
+## [2.0.0] - 2016-01-17
+### Breaking Changes
+- The hardcoded default thresholds of 90% warn 95% critical in `check-ram.rb` when using the `--used` option 
+  have been removed so custom thresholds can be passed. To obtain identical behavior configure the check
+  like `check-ram.rb --used -w 90 -c 95`.
+- Ruby < 2.1 is no longer supported
 
-## [2.1.1] - 2016-11-23
-### Fixed
-- `check-ram.rb`: Only require vmstat on `#run`
-- check if swap exists
+### Added
+- `check-swap-percent.rb`: Add option `--required` to alert if swap is missing (@losisin)
+- Support for Ruby 2.3.0 (@eheydrick)
 
-## [2.1.0] - 2016-11-22
+### Fixed
+- `check-memory-percent.sh`: Corrected units (from MB to %) in performance data output (@ttarczynski)
+- `check-ram.rb`: fixed overwriting of cli args for warning and critical when using `--used` (@majormoses)
+- `check-ram.rb`: Only require vmstat on `#run` (@PChambino)
+
 ### Changed
-- `check-swap-percent.rb`: Rewrite the check for swap percentage in pure ruby while maintaining backwards compatibility.
-- `check-swap-percent.sh`: Remove obsolete shell script.
+- `check-swap-percent.rb`: Rewrite the check for swap percentage in pure ruby while maintaining backwards compatibility. (@losisin)
+- `check-swap-percent.sh`: Remove obsolete shell script. (@losisin)
+- set environment varable LANG=C for reliable output parsing (@corro)
 
-## [2.0.0] - 2016-10-14
-### Fixed
-- `check-memory-percent.sh`: Corrected units (from MB to %) in performance data output
-- `check-ram.rb`: fixed overwriting of cli args for warning and critical when using `--used`
+### Removed
+- Support for Ruby < 2.1 (@eheydrick)
 
 ## [1.0.2] - 2016-04-12
 ### Fixed
