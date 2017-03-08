@@ -4,7 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
-- to better address linux users expecting free ram to not include buffer cache we bumped to a new version of vmstat to get the new functionality. As this is not installed you must manually install `2.3.0`. This will use the field `MemAvailable` in `/proc/meminfo`. It maintains its backwards compatibility to keep existing behavior.
+
+### Changed
+- `check-ram-rb`: to better address Linux users expecting free ram to not include buffer cache we bumped to a new version of vmstat to get the new functionality. As this is not installed you must manually install `2.3.0`. This will use the field `MemAvailable` in `/proc/meminfo`. It maintains its backwards compatibility to keep existing behavior. (@majormoses)
 
 ## [2.0.0] - 2017-01-17
 ### Breaking Changes
