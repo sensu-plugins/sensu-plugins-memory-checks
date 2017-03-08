@@ -77,7 +77,11 @@ class CheckRAM < Sensu::Plugin::Check::CLI
 
     # calculating free and used ram based on: https://github.com/threez/ruby-vmstat/issues/4 to emulate free -m
     mem = Vmstat.snapshot.memory
-    free_ram = mem.inactive_bytes + mem.free_bytes
+    begin
+      free_ram = mem.available_bytes
+    rescue NoMethodError
+      free_ram = mem.inactive_bytes + mem.free_bytes
+    end
     used_ram = mem.wired_bytes + mem.active_bytes
     total_ram = mem.total_bytes
 

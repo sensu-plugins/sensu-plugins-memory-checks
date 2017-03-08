@@ -4,10 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+- to better address linux users expecting free ram to not include buffer cache we bumped to a new version of vmstat to get the new functionality. As this is not installed you must manually install `2.3.0`. This will use the field `MemAvailable` in `/proc/meminfo`. It maintains its backwards compatibility to keep existing behavior.
 
 ## [2.0.0] - 2017-01-17
 ### Breaking Changes
-- The hardcoded default thresholds of 90% warn 95% critical in `check-ram.rb` when using the `--used` option 
+- The hardcoded default thresholds of 90% warn 95% critical in `check-ram.rb` when using the `--used` option
   have been removed so custom thresholds can be passed. To obtain identical behavior configure the check
   like `check-ram.rb --used -w 90 -c 95`.
 - Ruby < 2.1 is no longer supported
