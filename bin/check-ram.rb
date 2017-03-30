@@ -13,26 +13,20 @@
 #
 # DEPENDENCIES:
 #   gem: sensu-plugin
-#   gem: vmstat
-#   compiler: gcc
 #
 # USAGE:
 #   check-ram.rb --help
-#
-# EXTRA INSTALL INSTRUCTIONS:
-#   You must install gcc. This is needed to compile the vmstat gem
-#   which you must put in a path that sensu can reach. See the README for
-#   more details.
-# NOTES:
-#   The default behavior is to check % of RAM free. This can easily
-#   be overwritten via args please see `check-ram.rb --help` for details
-#   on each option.
 #
 # LICENSE:
 #   Copyright 2012 Sonian, Inc <chefs@sonian.net>
 #   Released under the same terms as Sensu (the MIT license); see LICENSE
 #   for details.
 #
+# DATE: 2017-03-30
+# Modified: Alex Werle Baule <alexwbaule@gmail.com>
+# Removed the vmstat gem and gcc dependency 
+# by reading the variables directly from /proc/meminfo
+
 require 'sensu-plugin/check/cli'
 
 class CheckRAM < Sensu::Plugin::Check::CLI
@@ -68,22 +62,10 @@ class CheckRAM < Sensu::Plugin::Check::CLI
          default: 5
 
   def run
-    begin
-      require 'vmstat'
-    rescue LoadError => e
-      raise unless e.message =~ /vmstat/
-      unknown "Error unable to load vmstat gem: #{e}"
-    end
-
-    # calculating free and used ram based on: https://github.com/threez/ruby-vmstat/issues/4 to emulate free -m
-    mem = Vmstat.snapshot.memory
-    begin
-      free_ram = mem.available_bytes
-    rescue NoMethodError
-      free_ram = mem.inactive_bytes + mem.free_bytes
-    end
-    used_ram = mem.wired_bytes + mem.active_bytes
-    total_ram = mem.total_bytes
+    mem = metrics_hash
+    free_ram = mem['free'] + mem['buffers'] + mem['cached']
+    used_ram = mem['total'] - free_ram
+	total_ram = mem['total']
 
     # only free or used should be defined, change defaults to mirror free
     if config[:used]
@@ -126,4 +108,21 @@ class CheckRAM < Sensu::Plugin::Check::CLI
       ok
     end
   end
+
+  def metrics_hash
+    mem = {}
+
+    meminfo_output.each_line do |line|
+      mem['total']     = line.split(/\s+/)[1].to_i if line =~ /^MemTotal/
+      mem['free']      = line.split(/\s+/)[1].to_i if line =~ /^MemFree/
+      mem['buffers']   = line.split(/\s+/)[1].to_i if line =~ /^Buffers/
+      mem['cached']    = line.split(/\s+/)[1].to_i if line =~ /^Cached/
+    end
+    mem
+  end
+
+  def meminfo_output
+    File.open('/proc/meminfo', 'r')
+  end
+
 end
