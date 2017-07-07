@@ -4,14 +4,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+### [3.0.0] - 2017-07-07
 ### Added
-- ruby 2.4 testing
+- ruby 2.4 testing (@majormoses)
 
 ### Fixed
-- in PR template spell "compatibility" correctly
+- in PR template spell "compatibility" correctly (@majormoses)
 
 ### Breaking Changes
-- `check-memory.sh`: Validate that both critical and warning values are provided.
+- `check-memory.sh`: Validate that both critical and warning values are provided. (@EslamElHusseiny)
 
 ## [2.1.0] - 2017-03-08
 ### Changed
@@ -104,7 +105,8 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Added
 - initial release
 
-[unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/2.1.0...HEAD
+[unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.0.0...HEAD
+[3.0.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/2.1.0...3.0.0
 [2.1.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/1.0.2...2.0.0
 [1.0.2]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/1.0.1...1.0.2
