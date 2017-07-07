@@ -10,6 +10,9 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Fixed
 - in PR template spell "compatibility" correctly
 
+### Breaking Changes
+- `check-memory.sh`: Validate that both critical and warning values are provided.
+
 ## [2.1.0] - 2017-03-08
 ### Changed
 - `check-ram-rb`: to better address Linux users expecting free ram to not include buffer cache we bumped to a new version of vmstat to get the new functionality. As this is not installed you must manually install `2.3.0`. This will use the field `MemAvailable` in `/proc/meminfo`. It maintains its backwards compatibility to keep existing behavior. (@majormoses)
