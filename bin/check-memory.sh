@@ -41,8 +41,10 @@ if [ "$hlp" = "yes" ]; then
   exit 0
 fi
 
-WARN=${WARN:=0}
-CRIT=${CRIT:=0}
+if [ -z "$WARN"] || [ -z "$CRIT" ]; then
+  echo "You must provide both warning and critical values"
+  exit 3
+fi
 
 set -o pipefail
 FREE_MEMORY=$(free -m | grep buffers/cache | awk '{ print $4 }')
