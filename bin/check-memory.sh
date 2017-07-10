@@ -41,7 +41,7 @@ if [ "$hlp" = "yes" ]; then
   exit 0
 fi
 
-if [ -z "$WARN"] || [ -z "$CRIT" ]; then
+if [ -z "$WARN" ] || [ -z "$CRIT" ]; then
   echo "You must provide both warning and critical values"
   exit 3
 fi
