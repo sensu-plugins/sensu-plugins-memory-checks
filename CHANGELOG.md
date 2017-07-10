@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+## [3.0.1] - 2017-07-07
+### Fixed
+- check-memory.sh: fixed a syntax error preventing it from running (@majormoses) 
+
 ### [3.0.0] - 2017-07-07
 ### Added
 - ruby 2.4 testing (@majormoses)
@@ -105,7 +109,8 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Added
 - initial release
 
-[unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.0.0...HEAD
+[unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.0.1...HEAD
+[3.0.1]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.0.0...3.0.1
 [3.0.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/2.1.0...3.0.0
 [2.1.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/1.0.2...2.0.0
