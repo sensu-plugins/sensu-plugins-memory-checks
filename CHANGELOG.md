@@ -6,6 +6,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ## [Unreleased]
 ## [3.0.1] - 2017-07-07
 ### Fixed
+- fix shell call response when running on non en_US locale systems (@stefan-walluhn)
 - check-memory.sh: fixed a syntax error preventing it from running (@majormoses) 
 
 ### [3.0.0] - 2017-07-07
