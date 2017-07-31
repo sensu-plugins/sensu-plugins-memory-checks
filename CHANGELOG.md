@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+### Fixed
+- fix shell call response when running on non en_US locale systems (@stefan-walluhn)
+
 ## [3.0.1] - 2017-07-07
 ### Fixed
 - check-memory.sh: fixed a syntax error preventing it from running (@majormoses) 
