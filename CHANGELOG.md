@@ -5,6 +5,10 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased]
 
+## [3.0.3] - 2017-09-21
+### Fixed
+- metrics-memory-percent.rb, metrics-memory.rb: change 'usedWOBuffersCaches' and 'freeWOBuffersCaches' calculation to use MemAvailable in /proc/meminfo when available. (@jpoizat)
+
 ## [3.0.2] - 2017-07-31
 ### Fixed
 - check-memory-percent.rb, check-memory.rb: fix shell call response when running on non en_US locale systems (@stefan-walluhn)
