@@ -1,13 +1,16 @@
-#Change Log
+# Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
+This CHANGELOG follows the located [here](https://github.com/sensu-plugins/community/blob/master/HOW_WE_CHANGELOG.md)
 
 ## [Unreleased]
 
-## [3.0.3] - 2017-09-21
+## [3.0.3] - 2017-09-23
 ### Fixed
 - metrics-memory-percent.rb, metrics-memory.rb: change 'usedWOBuffersCaches' and 'freeWOBuffersCaches' calculation to use MemAvailable in /proc/meminfo when available. (@jpoizat)
+
+### Added
+- update CHANGELOG guidelines location (@majormoses)
 
 ## [3.0.2] - 2017-07-31
 ### Fixed
