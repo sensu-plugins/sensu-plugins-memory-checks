@@ -48,15 +48,25 @@ fi
 WARN=${WARN:=80}
 CRIT=${CRIT:=90}
 
-#Get total memory available on machine
-TotalMem=$(free -m | grep Mem | awk '{ print $2 }')
-#Determine amount of free memory on the machine
-set -o pipefail
-FreeMem=$(free -m | grep buffers/cache | awk '{ print $4 }')
-if [ $? -ne 0 ];
-  then
-  FreeMem=$(free -m | grep Mem | awk '{ print $7 }')
+os=$(uname)
+if [ os.chomp="Darwin" ];
+then
+  #Get total memory available on machine
+  TotalMem=$(sysctl -a | grep '^hw\.m' | cut -d" " -f2)
+  #Determine amount of free memory on the machine
+  FreeMem=$(vm_stat | grep "Pages free" | tr -d '[:space:]' | cut -d: -f2 | cut -d. -f1)
+else
+  #Get total memory available on machine
+  TotalMem=$(free -m | grep Mem | awk '{ print $2 }')
+  #Determine amount of free memory on the machine
+  set -o pipefail
+  FreeMem=$(free -m | grep buffers/cache | awk '{ print $4 }')
+  if [ $? -ne 0 ];
+    then
+    FreeMem=$(free -m | grep Mem | awk '{ print $7 }')
+  fi
 fi
+
 #Get percentage of free memory
 FreePer=$(awk -v total="$TotalMem" -v free="$FreeMem" 'BEGIN { printf("%-10f\n", (free / total) * 100) }' | cut -d. -f1)
 #Get actual memory usage percentage by subtracting free memory percentage from 100
