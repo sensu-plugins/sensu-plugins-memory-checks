@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the located [here](https://github.com/sensu-plugins/community/blob/master/HOW_WE_CHANGELOG.md)
 
 ## [Unreleased]
+### Added
+- check-memory-percent.sh: added osx support (@jjdiazgarcia)
 
 ## [3.0.3] - 2017-09-23
 ### Fixed
