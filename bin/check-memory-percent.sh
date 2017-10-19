@@ -55,14 +55,15 @@ then
   TotalMem=$(sysctl -a | grep '^hw\.m' | cut -d" " -f2)
   #Determine amount of free memory on the machine
   FreeMem=$(vm_stat | grep "Pages free" | tr -d '[:space:]' | cut -d: -f2 | cut -d. -f1)
-else
+elif [ os.chomp="Linux" ];
+then
   #Get total memory available on machine
   TotalMem=$(free -m | grep Mem | awk '{ print $2 }')
   #Determine amount of free memory on the machine
   set -o pipefail
   FreeMem=$(free -m | grep buffers/cache | awk '{ print $4 }')
   if [ $? -ne 0 ];
-    then
+  then
     FreeMem=$(free -m | grep Mem | awk '{ print $7 }')
   fi
 fi
