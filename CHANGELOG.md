@@ -6,6 +6,7 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 ## [Unreleased]
 ### Added
 - check-memory-percent.sh: added osx support (@jjdiazgarcia)
+- check-memory-percent.sh: make if statement syntax consistent with the script (@majormoses)
 
 ## [3.0.3] - 2017-09-23
 ### Fixed
