@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the located [here](https://github.com/sensu-plugins/community/blob/master/HOW_WE_CHANGELOG.md)
 
 ## [Unreleased]
+
+## [3.1.0] - 2017-10-20
 ### Added
 - check-memory-percent.sh: added osx support (@jjdiazgarcia)
 - check-memory-percent.sh: make if statement syntax consistent with the script (@majormoses)
@@ -124,7 +126,8 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.0.1...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.0...HEAD
+[3.1.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.0.1...3.1.0
 [3.0.2]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.0.1...3.0.2
 [3.0.1]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.0.0...3.0.1
 [3.0.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/2.1.0...3.0.0
