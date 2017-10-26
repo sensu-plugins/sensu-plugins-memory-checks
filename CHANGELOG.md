@@ -5,6 +5,7 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 
 ## [Unreleased]
 
+## [3.1.1] - 2017-10-25
 ### Fixed
 - check-memory-percent.sh: compare variable `$os` rather than the string 'os' (@lcc207)
 
@@ -130,6 +131,7 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 - initial release
 
 [Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.0...HEAD
+[3.1.1]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.0...3.1.1
 [3.1.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.0.1...3.1.0
 [3.0.2]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.0.1...3.0.2
 [3.0.1]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.0.0...3.0.1
