@@ -5,6 +5,9 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 
 ## [Unreleased]
 
+### Fixed
+- check-memory-percent.sh: compare variable `$os` rather than the string 'os' (@lcc207)
+
 ## [3.1.0] - 2017-10-20
 ### Added
 - check-memory-percent.sh: added osx support (@jjdiazgarcia)
