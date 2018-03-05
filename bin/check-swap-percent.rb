@@ -1,5 +1,4 @@
 #! /usr/bin/env ruby
-#  encoding: UTF-8
 #
 # Checks SWAP usage as a % of the total swap
 #

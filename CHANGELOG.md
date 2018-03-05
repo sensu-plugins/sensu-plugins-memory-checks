@@ -5,6 +5,12 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 
 ## [Unreleased]
 
+### Security
+- updated rubocop dependency to `~> 0.51.0` per: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8418. (@majormoses)
+
+### Changed
+- appeased the cops (@majormoses)
+
 ## [3.1.1] - 2017-10-25
 ### Fixed
 - check-memory-percent.sh: compare variable `$os` rather than the string 'os' (@lcc207)
