@@ -1,5 +1,4 @@
 #! /usr/bin/env ruby
-#  encoding: UTF-8
 #
 #   check-ram
 #
@@ -94,7 +93,8 @@ class CheckRAM < Sensu::Plugin::Check::CLI
       # free_ram is returned in Bytes. see: https://github.com/threez/ruby-vmstat/blob/master/lib/vmstat/memory.rb
       free_ram /= 1024 * 1024
       used_ram /= 1024 * 1024
-      total_ram /= 1024 * 1024
+      # false positive
+      total_ram /= 1024 * 1024 # rubocop:disable Lint/UselessAssignment
       if config[:free]
         ram = free_ram
         message "#{ram} megabytes of RAM left"

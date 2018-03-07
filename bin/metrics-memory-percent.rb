@@ -1,5 +1,4 @@
 #! /usr/bin/env ruby
-#  encoding: UTF-8
 #
 #   metrics-memory-percent
 #
@@ -80,7 +79,7 @@ class MemoryGraphite < Sensu::Plugin::Metric::CLI::Graphite
                mem['swapTotal']
              end
 
-    mem.each do |k, _v|
+    mem.each_key do |k|
       # with percentages, used and free are exactly complementary
       # no need to have both
       # the one to drop here is "used" because "free" will
