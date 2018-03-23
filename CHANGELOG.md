@@ -5,8 +5,10 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 
 ## [Unreleased]
 
-## [3.1.2] - 2018-03-07
+### Security
+- updated yard dependency to `~> 0.9.11` per: https://nvd.nist.gov/vuln/detail/CVE-2017-17042 (@majormoses)
 
+## [3.1.2] - 2018-03-07
 ### Security
 - updated rubocop dependency to `~> 0.51.0` per: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8418. (@majormoses)
 
