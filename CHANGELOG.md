@@ -5,6 +5,7 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 
 ## [Unreleased]
 
+## [3.1.3] - 2018-03-27
 ### Security
 - updated yard dependency to `~> 0.9.11` per: https://nvd.nist.gov/vuln/detail/CVE-2017-17042 (@majormoses)
 
@@ -140,7 +141,8 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.2...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.3...HEAD
+[3.1.3]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.2...3.1.3
 [3.1.2]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.1...3.1.2
 [3.1.1]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.0...3.1.1
 [3.1.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.0.1...3.1.0
