@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the located [here](https://github.com/sensu-plugins/community/blob/master/HOW_WE_CHANGELOG.md)
 
 ## [Unreleased]
+### Added
+- Added metrics-memory-vmstat.rb (@yuri-zubov sponsored by Actility, https://www.actility.com)
+
 
 ## [3.1.3] - 2018-03-27
 ### Security
