@@ -4,9 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the located [here](https://github.com/sensu-plugins/community/blob/master/HOW_WE_CHANGELOG.md)
 
 ## [Unreleased]
+
+## [3.2.0] - 2018-04-17
 ### Added
 - Added metrics-memory-vmstat.rb (@yuri-zubov sponsored by Actility, https://www.actility.com)
-
 
 ## [3.1.3] - 2018-03-27
 ### Security
@@ -144,7 +145,8 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.3...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.2.0...HEAD
+[3.2.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.3..3.2.0
 [3.1.3]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.2...3.1.3
 [3.1.2]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.1...3.1.2
 [3.1.1]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.0...3.1.1
