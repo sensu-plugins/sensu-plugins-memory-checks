@@ -18,8 +18,8 @@
   - [Sensu Core](#sensu-core)
     - [Check definition](#check-definition)
 - [Installation from source](#installation-from-source)
-- [Contributing](#contributing)
 - [Additional notes](#additional-notes)
+- [Contributing](#contributing)
 
 ### Overview
 
@@ -152,10 +152,6 @@ See the instructions above for [asset registration](#asset-registration)
 
 Install and setup plugins on [Sensu Core](https://docs.sensu.io/sensu-core/latest/installation/installing-plugins/)
 
-## Contributing
-
-See [CONTRIBUTING.md](https://github.com/sensu-plugins/sensu-plugins-memory-checks/blob/master/CONTRIBUTING.md) for information about contributing to this plugin.
-
 ## Additional notes
 
 ### `bin/check-ram.rb`
@@ -172,3 +168,7 @@ Some users may not need to use `check-ram.rb`. These users do not need gcc to us
 ### Certification verification
 
 If you are verifying certificates in the gem install you will need the [certificate for the `sys-filesystem` gem](https://raw.githubusercontent.com/djberg96/sys-filesystem/ffi/certs/djberg96_pub.pem) loaded in the gem certificate store.
+
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/sensu-plugins/sensu-plugins-memory-checks/blob/master/CONTRIBUTING.md) for information about contributing to this plugin.
