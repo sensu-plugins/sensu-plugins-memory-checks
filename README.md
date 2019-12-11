@@ -23,7 +23,6 @@
 
 ### Overview
 
-This plugin provides native disk instrumentation for monitoring and metrics collection, including: health, usage, and various metrics.
 
 This plugin provides native memory instrumentation for monitoring and metrics collection, including memory usage via `free` and `vmstat`, including metrics. **NOTE**: This plugin may have cross-platform issues.
 
