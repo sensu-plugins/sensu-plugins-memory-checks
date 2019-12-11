@@ -1,4 +1,6 @@
 #! /usr/bin/env ruby
+# frozen_string_literal: true
+
 #
 #   metrics-memory
 #
@@ -67,7 +69,7 @@ class MemoryGraphite < Sensu::Plugin::Metric::CLI::Graphite
       mem['usedWOBuffersCaches'] = mem['used'] - (mem['buffers'] + mem['cached'])
       mem['freeWOBuffersCaches'] = mem['free'] + (mem['buffers'] + mem['cached'])
     end
-    mem['swapUsedPercentage'] = 100 * mem['swapUsed'] / mem['swapTotal'] if mem['swapTotal'] > 0
+    mem['swapUsedPercentage'] = 100 * mem['swapUsed'] / mem['swapTotal'] if mem['swapTotal'].positive?
 
     mem
   end
