@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module SensuPluginsMemoryChecks
   module Version
     MAJOR = 4

@@ -1,10 +1,12 @@
-lib = File.expand_path('../lib', __FILE__)
+# frozen_string_literal: true
+
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'date'
 require_relative 'lib/sensu-plugins-memory-checks'
 
-Gem::Specification.new do |s| # rubocop: disable Metrics/BlockLength
+Gem::Specification.new do |s|
   s.authors                = ['Sensu Plugins and contributors']
   s.date                   = Date.today.to_s
   s.description            = 'This plugin provides native memory instrumentation
@@ -16,11 +18,13 @@ Gem::Specification.new do |s| # rubocop: disable Metrics/BlockLength
   s.files                  = Dir.glob('{bin,lib}/**/*') + %w[LICENSE README.md CHANGELOG.md]
   s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-memory-checks'
   s.license                = 'MIT'
-  s.metadata               = { 'maintainer'         => 'sensu-plugin',
-                               'development_status' => 'active',
-                               'production_status'  => 'unstable - testing recommended',
-                               'release_draft'      => 'false',
-                               'release_prerelease' => 'false' }
+  s.metadata               = {
+    'maintainer' => 'sensu-plugin',
+    'development_status' => 'active',
+    'production_status' => 'unstable - testing recommended',
+    'release_draft' => 'false',
+    'release_prerelease' => 'false'
+  }
   s.name                   = 'sensu-plugins-memory-checks'
   s.platform               = Gem::Platform::RUBY
   s.post_install_message   = 'You can use the embedded Ruby by setting EMBEDDED_RUBY=true in /etc/default/sensu'
@@ -39,7 +43,7 @@ Gem::Specification.new do |s| # rubocop: disable Metrics/BlockLength
   s.add_development_dependency 'rake',                      '~> 10.5'
   s.add_development_dependency 'redcarpet',                 '~> 3.2'
   s.add_development_dependency 'rspec',                     '~> 3.4'
-  s.add_development_dependency 'rubocop',                   '~> 0.51.0'
+  s.add_development_dependency 'rubocop',                   '~> 0.77.0'
   s.add_development_dependency 'vmstat',                    '~> 2.3.0'
   s.add_development_dependency 'yard',                      '~> 0.9.11'
 end
