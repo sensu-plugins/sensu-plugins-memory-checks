@@ -157,7 +157,7 @@ Install and setup plugins on [Sensu Core](https://docs.sensu.io/sensu-core/lates
 
 Ruby does not have a good native way to grab information on memory usage (without using C extensions or running shell commands and parsing out). For this reason, `check-ram.rb` uses a gem called `vmstat` that has a dependency on a GCC to compile the C extensions.
 
-Some users may not need to use `check-ram.rb`. These users do not need gcc to use the rest of this plugin, so we do not install GCC by default.
+To avoid errors which occur when trying to compile the C extensions without GCC present, we do not install `vmstat` gem by default.
 
 **Users who need to use `check-ram.rb` must install GCC**. GCC installation usually requires two steps but can vary based on your distribution and Ruby setup:
 
