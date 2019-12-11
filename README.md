@@ -159,7 +159,7 @@ Ruby does not have a good native way to grab information on memory usage (withou
 
 To avoid errors that occur when trying to compile the C extensions without GCC present, we do not install the `vmstat` gem by default.
 
-**Users who need to use `check-ram.rb` must install build tools including GCC**. This usually requires two steps but can vary based on your distribution and Ruby setup:
+**Users who need to use `check-ram.rb` must install build tools, including GCC**. This usually requires two steps but can vary based on your distribution and Ruby setup:
 
 1. Install `gcc`. If you are on a Debian system, GCC is located in the `build-essential` package.
 2. Install the `vmstat` gem into the path from which Sensu gems are expected to run, `sudo /opt/sensu/embedded/bin/gem install vmstat --no-rdoc --no-ri`, or the equivalent for installing Sensu gems in your configuration management system.
