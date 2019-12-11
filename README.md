@@ -161,7 +161,7 @@ To avoid errors that occur when trying to compile the C extensions without GCC p
 
 **Users who need to use `check-ram.rb` must install build tools, including GCC**. This usually requires two steps but can vary based on your distribution and Ruby setup:
 
-1. Install `gcc`. If you are on a Debian system, GCC is located in the `build-essential` package.
+1. Install `gcc`. If you are on a Debian system, GCC is located in the `build-essential` package. On RHEL systems, `yum groupinstall "Development tools" ` will provide the required packages.
 2. Install the `vmstat` gem into the path from which Sensu gems are expected to run, `sudo /opt/sensu/embedded/bin/gem install vmstat --no-rdoc --no-ri`, or the equivalent for installing Sensu gems in your configuration management system.
 
 ### Certification verification
