@@ -1,4 +1,6 @@
 #! /usr/bin/env ruby
+# frozen_string_literal: true
+
 #
 #   check-ram
 #
@@ -32,6 +34,7 @@
 #   Released under the same terms as Sensu (the MIT license); see LICENSE
 #   for details.
 #
+
 require 'sensu-plugin/check/cli'
 
 class CheckRAM < Sensu::Plugin::Check::CLI
@@ -71,6 +74,7 @@ class CheckRAM < Sensu::Plugin::Check::CLI
       require 'vmstat'
     rescue LoadError => e
       raise unless e.message =~ /vmstat/
+
       unknown "Error unable to load vmstat gem: #{e}"
     end
 
