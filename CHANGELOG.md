@@ -5,8 +5,13 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 
 ## [Unreleased]
 
-### Added
-- Updated asset build targets to support centos6
+## [4.1.0] - 2019-12-16
+### Changed
+- Updated asset build target to support Centos6
+- Updated rake development requirement from ~> 10.5 to ~> 13.0 .
+- Updated rubocop development requirement from ~> 0.51.0 to ~> 0.77.0 .
+- Updated bundler development requirement from ~> 1.7 to ~> 2.0 .
+
 
 ## [4.0.0] - 2019-04-18
 ### Breaking Changes
@@ -158,7 +163,8 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/4.0.0...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/4.1.0...HEAD
+[4.1.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/4.0.0..4.1.0
 [4.0.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.2.0..4.0.0
 [3.2.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.3..3.2.0
 [3.1.3]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.2...3.1.3
