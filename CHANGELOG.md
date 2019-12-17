@@ -11,7 +11,7 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 - Updated rake development requirement from ~> 10.5 to ~> 13.0 .
 - Updated rubocop development requirement from ~> 0.51.0 to ~> 0.77.0 .
 - Updated bundler development requirement from ~> 1.7 to ~> 2.0 .
-
+- Updated README
 
 ## [4.0.0] - 2019-04-18
 ### Breaking Changes
