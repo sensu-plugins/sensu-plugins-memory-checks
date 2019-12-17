@@ -5,6 +5,10 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 
 ## [Unreleased]
 
+## [4.1.1] - 2019-12-17
+### Fixed
+- Quick fix for asset generation, removing centos build from bonsai.yml
+
 ## [4.1.0] - 2019-12-16
 ### Changed
 - Updated asset build target to support Centos6
@@ -163,7 +167,8 @@ This CHANGELOG follows the located [here](https://github.com/sensu-plugins/commu
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/4.1.0...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/4.1.1...HEAD
+[4.1.1]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/4.1.0..4.1.1
 [4.1.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/4.0.0..4.1.0
 [4.0.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.2.0..4.0.0
 [3.2.0]: https://github.com/sensu-plugins/sensu-plugins-memory-checks/compare/3.1.3..3.2.0
