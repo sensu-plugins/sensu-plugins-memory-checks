@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env /bin/sh
 #
 # Evaluate free system memory from Linux based systems.
 #
@@ -63,10 +63,10 @@ else
   output="free system memory: $FREE_MEMORY MB"
 fi
 
-if (( $FREE_MEMORY <= $CRIT )); then
+if [ $FREE_MEMORY -le $CRIT ]; then
   echo "MEM CRITICAL - $output"
   exit 2
-elif (( $FREE_MEMORY <= $WARN )); then
+elif [ $FREE_MEMORY -le $WARN ]; then
   echo "MEM WARNING - $output"
   exit 1
 else

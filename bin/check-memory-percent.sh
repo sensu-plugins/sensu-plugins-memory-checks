@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env /bin/sh
 #
 # Evaluate free system memory from Linux based systems based on percentage
 # This was forked from Sensu Community Plugins
@@ -82,10 +82,10 @@ else
   output="system memory usage: $UsedPer%"
 fi
 
-if (( $UsedPer >= $CRIT )); then
+if [ $UsedPer -ge $CRIT ]; then
   echo "MEM CRITICAL - $output"
   exit 2
-elif (( $UsedPer >= $WARN )); then
+elif [ $UsedPer -ge $WARN ]; then
   echo "MEM WARNING - $output"
   exit 1
 else
