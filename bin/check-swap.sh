@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env /bin/sh
 #
 # Evaluate swap memory usage from Linux based systems.
 #
@@ -59,10 +59,10 @@ else
   output="used swap memory: $USED_SWAP MB"
 fi
 
-if (( $USED_SWAP >= $CRIT )); then
+if [ $USED_SWAP -ge $CRIT ]; then
   echo "SWAP CRITICAL - $output"
   exit 2
-elif (( $USED_SWAP >= $WARN )); then
+elif [ $USED_SWAP -ge $WARN ]; then
   echo "SWAP WARNING - $output"
   exit 1
 else
